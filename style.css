@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+p,
+h2 {
+    color: white;
+    font-size: 20px;
+
+}
+
+body {
+    background: url('./images/bdeb13be821ea4bdc08a9ceb8e5e4804.jpg');
+    animation: slider infinite alternate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+}
+
+@keyframes slider {
+    0% {
+        background: url('./images/bdeb13be821ea4bdc08a9ceb8e5e4804.jpg');
+    }
+
+    50% {
+        background: url('./images/duglas-allen-sviataia-zhanna-d-ark-v-voine-s-anglichanami-20.jpg');
+    }
+
+    100% {
+        background: url('./images/5ed20b46ae5ac90da82e455b.jpg');
+    }
+
+
+}
+
+.slider_wrapper {
+    max-width: 740px;
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slide {
+    width: 100%;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dot.active {
+    background: #fff;
+}
+
+.dot-content {
+    display: flex;
+    justify-content: center;
+}
