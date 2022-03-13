@@ -60,6 +60,7 @@ body {
     color: red;
     font-family: monospace;
     font-weight: bold;
+    cursor:pointer;
 }
 
 .dot.active {
